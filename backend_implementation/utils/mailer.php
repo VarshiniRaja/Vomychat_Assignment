@@ -14,12 +14,12 @@ function sendMail($to, $subject, $message) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Change if using another provider
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'varshiniraja050104@gmail.com'; 
-        $mail->Password   = 'uhvqcoptoprpluyn'; // Use app password, NOT your real password
+        $mail->Username   = ''; //mail id sender
+        $mail->Password   = ''; // Use app password, NOT your real password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
         // Recipients
-        $mail->setFrom('varshiniraja050104@gmail.com', 'VomyChat'); // Sender
+        $mail->setFrom('', 'VomyChat'); // Sender
         $mail->addAddress($to);
 
 
